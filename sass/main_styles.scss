@@ -156,13 +156,6 @@ header {
   }
 
 }
-.logo-info,
-.right-block {
-	display: none;
-}
-.header-info {
-  display: none;
-}
 
 /*call-us-block*/
     .call-us-block {
@@ -740,6 +733,8 @@ footer {
 }
 /*--------------------------*/
 .rates-content {
+	box-sizing: border-box;
+	overflow: hidden;
 	.rates-list {
 		width: 100%;
 		margin: 0 auto;
@@ -789,6 +784,8 @@ footer {
 .faq-content {
 	padding: 26px 0 28px;
 	background: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
 	.faq-description {
 		font-size: 18px;
 		font-weight: 400;
@@ -832,6 +829,59 @@ footer {
 
 	.form-title {
 		margin-top: 0;
+	}
+}
+/*--------------------------*/
+/*--------------------------*/
+.services-content {
+	padding-bottom: 27px;
+	box-sizing: border-box;
+	overflow: hidden;
+	.services-list {
+		width: 100%;
+		margin: 27px auto 0;
+		padding: 24px 10px 14px;
+		text-align: center;
+		box-sizing: border-box;
+		overflow: hidden;
+		background-color: #4183d7;
+
+		li {
+			display: block;
+			width: 100%;
+			text-align: left;
+			border-top: 1px solid #6ea6e2;
+
+			&:first-child {
+				border-top: none;
+			}
+
+			a {
+				display: block;
+				padding: 10px 0;
+				text-decoration: none;
+				color: white;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 30px;
+			}
+		}
+	}
+	.senior-title {
+		margin: 27px auto 35px;
+		padding: 0 10px;
+		text-align: center;
+		line-height: 28px;
+		color: black;
+		font-size: 22px;
+		font-weight: 700;
+	}
+	.senior-description {
+		padding: 0 10px;
+		color: #4d4c4c;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
 	}
 }
 /*--------------------------*/
