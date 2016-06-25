@@ -758,8 +758,9 @@ footer .copyright h1 a:hover {
   float: right;
 }
 
-/* line 626, ../sass/main_styles.scss */
-.form-section .form-title {
+/* line 627, ../sass/main_styles.scss */
+.form-section .form-title,
+.feedback-section .form-title {
   margin: 64px auto 13px;
   text-align: center;
   color: #4183d7;
@@ -767,15 +768,22 @@ footer .copyright h1 a:hover {
   font-weight: 700;
   line-height: 14px;
 }
-/* line 635, ../sass/main_styles.scss */
-.form-section #feedback-form {
+/* line 636, ../sass/main_styles.scss */
+.form-section #feedback-form,
+.feedback-section #feedback-form {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
 }
-/* line 641, ../sass/main_styles.scss */
+/* line 642, ../sass/main_styles.scss */
 .form-section .name,
-.form-section .email {
+.form-section .email,
+.form-section .tel,
+.form-section .topic,
+.feedback-section .name,
+.feedback-section .email,
+.feedback-section .tel,
+.feedback-section .topic {
   display: block;
   width: 100%;
   height: 33px;
@@ -788,34 +796,39 @@ footer .copyright h1 a:hover {
   border: 1px solid #4183d7;
   box-sizing: border-box;
 }
-/* line 657, ../sass/main_styles.scss */
-.form-section ::-webkit-input-placeholder {
+/* line 660, ../sass/main_styles.scss */
+.form-section ::-webkit-input-placeholder,
+.feedback-section ::-webkit-input-placeholder {
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 663, ../sass/main_styles.scss */
-.form-section :-moz-placeholder {
+/* line 666, ../sass/main_styles.scss */
+.form-section :-moz-placeholder,
+.feedback-section :-moz-placeholder {
   /* Firefox 18- */
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 669, ../sass/main_styles.scss */
-.form-section ::-moz-placeholder {
+/* line 672, ../sass/main_styles.scss */
+.form-section ::-moz-placeholder,
+.feedback-section ::-moz-placeholder {
   /* Firefox 19+ */
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 675, ../sass/main_styles.scss */
-.form-section :-ms-input-placeholder {
+/* line 678, ../sass/main_styles.scss */
+.form-section :-ms-input-placeholder,
+.feedback-section :-ms-input-placeholder {
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 680, ../sass/main_styles.scss */
-.form-section .message {
+/* line 683, ../sass/main_styles.scss */
+.form-section .message,
+.feedback-section .message {
   width: 100%;
   height: 99px;
   padding: 10px 0 0 10px;
@@ -827,16 +840,18 @@ footer .copyright h1 a:hover {
   font-weight: 400;
   resize: none;
 }
-/* line 692, ../sass/main_styles.scss */
-.form-section .required {
+/* line 695, ../sass/main_styles.scss */
+.form-section .required,
+.feedback-section .required {
   text-align: left;
   color: #6d6f6f;
   font-size: 15px;
   font-weight: 400;
   line-height: 36px;
 }
-/* line 700, ../sass/main_styles.scss */
-.form-section .send-button {
+/* line 703, ../sass/main_styles.scss */
+.form-section .send-button,
+.feedback-section .send-button {
   display: block;
   width: 288px;
   height: 35px;
@@ -849,6 +864,28 @@ footer .copyright h1 a:hover {
   line-height: 35px;
   cursor: pointer;
   background-color: #f9690e;
+}
+
+/* line 719, ../sass/main_styles.scss */
+.contact-content .contact-list {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 725, ../sass/main_styles.scss */
+.contact-content .contact-list li {
+  display: block;
+  margin: 20px auto;
+  text-align: left;
+  color: #4d4c4c;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+/* line 733, ../sass/main_styles.scss */
+.contact-content .contact-list li span {
+  font-weight: 700;
 }
 
 /*--------------------------*/
