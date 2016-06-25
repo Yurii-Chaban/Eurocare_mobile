@@ -889,4 +889,37 @@ footer .copyright h1 a:hover {
 }
 
 /*--------------------------*/
+/* line 741, ../sass/main_styles.scss */
+.rates-content .rates-list {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 747, ../sass/main_styles.scss */
+.rates-content .rates-list li {
+  display: block;
+  margin: 20px auto;
+  padding: 0 8px;
+  text-align: left;
+  color: #4d4c4c;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+/* line 756, ../sass/main_styles.scss */
+.rates-content .rates-list li span {
+  font-weight: 700;
+}
+/* line 759, ../sass/main_styles.scss */
+.rates-content .rates-list li img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 765, ../sass/main_styles.scss */
+.rates-content .rates-list .img-item {
+  padding: 0;
+}
+
 /*--------------------------*/
