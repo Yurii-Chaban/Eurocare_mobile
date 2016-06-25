@@ -758,9 +758,10 @@ footer .copyright h1 a:hover {
   float: right;
 }
 
-/* line 627, ../sass/main_styles.scss */
+/* line 628, ../sass/main_styles.scss */
 .form-section .form-title,
-.feedback-section .form-title {
+.feedback-section .form-title,
+.faq-section-form .form-title {
   margin: 64px auto 13px;
   text-align: center;
   color: #4183d7;
@@ -768,14 +769,18 @@ footer .copyright h1 a:hover {
   font-weight: 700;
   line-height: 14px;
 }
-/* line 636, ../sass/main_styles.scss */
+/* line 637, ../sass/main_styles.scss */
 .form-section #feedback-form,
-.feedback-section #feedback-form {
+.form-section #faq-form,
+.feedback-section #feedback-form,
+.feedback-section #faq-form,
+.faq-section-form #feedback-form,
+.faq-section-form #faq-form {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
 }
-/* line 642, ../sass/main_styles.scss */
+/* line 644, ../sass/main_styles.scss */
 .form-section .name,
 .form-section .email,
 .form-section .tel,
@@ -783,7 +788,11 @@ footer .copyright h1 a:hover {
 .feedback-section .name,
 .feedback-section .email,
 .feedback-section .tel,
-.feedback-section .topic {
+.feedback-section .topic,
+.faq-section-form .name,
+.faq-section-form .email,
+.faq-section-form .tel,
+.faq-section-form .topic {
   display: block;
   width: 100%;
   height: 33px;
@@ -796,39 +805,44 @@ footer .copyright h1 a:hover {
   border: 1px solid #4183d7;
   box-sizing: border-box;
 }
-/* line 660, ../sass/main_styles.scss */
+/* line 662, ../sass/main_styles.scss */
 .form-section ::-webkit-input-placeholder,
-.feedback-section ::-webkit-input-placeholder {
+.feedback-section ::-webkit-input-placeholder,
+.faq-section-form ::-webkit-input-placeholder {
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 666, ../sass/main_styles.scss */
+/* line 668, ../sass/main_styles.scss */
 .form-section :-moz-placeholder,
-.feedback-section :-moz-placeholder {
+.feedback-section :-moz-placeholder,
+.faq-section-form :-moz-placeholder {
   /* Firefox 18- */
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 672, ../sass/main_styles.scss */
+/* line 674, ../sass/main_styles.scss */
 .form-section ::-moz-placeholder,
-.feedback-section ::-moz-placeholder {
+.feedback-section ::-moz-placeholder,
+.faq-section-form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 678, ../sass/main_styles.scss */
+/* line 680, ../sass/main_styles.scss */
 .form-section :-ms-input-placeholder,
-.feedback-section :-ms-input-placeholder {
+.feedback-section :-ms-input-placeholder,
+.faq-section-form :-ms-input-placeholder {
   color: #6d6f6f;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 683, ../sass/main_styles.scss */
+/* line 685, ../sass/main_styles.scss */
 .form-section .message,
-.feedback-section .message {
+.feedback-section .message,
+.faq-section-form .message {
   width: 100%;
   height: 99px;
   padding: 10px 0 0 10px;
@@ -840,18 +854,20 @@ footer .copyright h1 a:hover {
   font-weight: 400;
   resize: none;
 }
-/* line 695, ../sass/main_styles.scss */
+/* line 697, ../sass/main_styles.scss */
 .form-section .required,
-.feedback-section .required {
+.feedback-section .required,
+.faq-section-form .required {
   text-align: left;
   color: #6d6f6f;
   font-size: 15px;
   font-weight: 400;
   line-height: 36px;
 }
-/* line 703, ../sass/main_styles.scss */
+/* line 705, ../sass/main_styles.scss */
 .form-section .send-button,
-.feedback-section .send-button {
+.feedback-section .send-button,
+.faq-section-form .send-button {
   display: block;
   width: 288px;
   height: 35px;
@@ -866,14 +882,14 @@ footer .copyright h1 a:hover {
   background-color: #f9690e;
 }
 
-/* line 719, ../sass/main_styles.scss */
+/* line 721, ../sass/main_styles.scss */
 .contact-content .contact-list {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
 }
-/* line 725, ../sass/main_styles.scss */
+/* line 727, ../sass/main_styles.scss */
 .contact-content .contact-list li {
   display: block;
   margin: 20px auto;
@@ -883,20 +899,20 @@ footer .copyright h1 a:hover {
   line-height: 28px;
   font-weight: 400;
 }
-/* line 733, ../sass/main_styles.scss */
+/* line 735, ../sass/main_styles.scss */
 .contact-content .contact-list li span {
   font-weight: 700;
 }
 
 /*--------------------------*/
-/* line 741, ../sass/main_styles.scss */
+/* line 743, ../sass/main_styles.scss */
 .rates-content .rates-list {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
 }
-/* line 747, ../sass/main_styles.scss */
+/* line 749, ../sass/main_styles.scss */
 .rates-content .rates-list li {
   display: block;
   margin: 20px auto;
@@ -907,29 +923,29 @@ footer .copyright h1 a:hover {
   line-height: 28px;
   font-weight: 400;
 }
-/* line 756, ../sass/main_styles.scss */
+/* line 758, ../sass/main_styles.scss */
 .rates-content .rates-list li span {
   font-weight: 700;
 }
-/* line 759, ../sass/main_styles.scss */
+/* line 761, ../sass/main_styles.scss */
 .rates-content .rates-list li img {
   display: block;
   margin: 0 auto;
   text-align: center;
 }
-/* line 765, ../sass/main_styles.scss */
+/* line 767, ../sass/main_styles.scss */
 .rates-content .rates-list .img-item {
   padding: 0;
 }
 
 /*--------------------------*/
 /*--------------------------*/
-/* line 772, ../sass/main_styles.scss */
+/* line 774, ../sass/main_styles.scss */
 .about-content {
   padding: 26px 0 28px;
   background: #fff;
 }
-/* line 775, ../sass/main_styles.scss */
+/* line 777, ../sass/main_styles.scss */
 .about-content .about-description {
   box-sizing: border-box;
   marin: 0 auto;
@@ -938,6 +954,59 @@ footer .copyright h1 a:hover {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+}
+
+/*--------------------------*/
+/*--------------------------*/
+/* line 789, ../sass/main_styles.scss */
+.faq-content {
+  padding: 26px 0 28px;
+  background: #fff;
+}
+/* line 792, ../sass/main_styles.scss */
+.faq-content .faq-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6d6f6f;
+}
+/* line 797, ../sass/main_styles.scss */
+.faq-content .faq-description span {
+  display: block;
+  color: #f9690e;
+}
+/* line 803, ../sass/main_styles.scss */
+.faq-content .faq-list {
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 809, ../sass/main_styles.scss */
+.faq-content .faq-list li {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  text-align: left;
+  margin: 0 auto;
+  border-bottom: 2px dotted #4183d7;
+}
+/* line 817, ../sass/main_styles.scss */
+.faq-content .faq-list li:first-child {
+  border-top: 2px dotted #4183d7;
+}
+/* line 821, ../sass/main_styles.scss */
+.faq-content .faq-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4183d7;
+}
+
+/* line 833, ../sass/main_styles.scss */
+.faq-section-form .form-title {
+  margin-top: 0;
 }
 
 /*--------------------------*/

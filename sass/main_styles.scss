@@ -623,7 +623,8 @@ footer {
 	}
 }
 .form-section,
-.feedback-section {
+.feedback-section,
+.faq-section-form {
 	.form-title {
 		margin: 64px auto 13px;
 		text-align: center;
@@ -633,7 +634,8 @@ footer {
 		line-height: 14px;
 	}
 
-	#feedback-form {
+	#feedback-form,
+	#faq-form {
 		width: 100%;
 		box-sizing: border-box;
 		overflow: hidden;
@@ -780,6 +782,56 @@ footer {
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 28px;
+	}
+}
+/*--------------------------*/
+/*--------------------------*/
+.faq-content {
+	padding: 26px 0 28px;
+	background: #fff;
+	.faq-description {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		color: #6d6f6f;
+		span {
+			display: block;
+			color: #f9690e;
+		}
+	}
+
+	.faq-list {
+		width: 100%;
+		margin: 15px auto;
+		text-align: center;
+		box-sizing: border-box;
+
+		li {
+			display: block;
+			width: 100%;
+			padding: 15px 0;
+			text-align: left;
+			margin: 0 auto;
+			border-bottom: 2px dotted #4183d7;
+
+			&:first-child {
+				border-top: 2px dotted #4183d7;
+			}
+
+			a {
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 28px;
+				color: #4183d7;
+			}
+		}
+	}
+}
+.faq-section-form {
+
+	.form-title {
+		margin-top: 0;
 	}
 }
 /*--------------------------*/
