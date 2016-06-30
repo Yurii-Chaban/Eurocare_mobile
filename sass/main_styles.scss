@@ -32,6 +32,11 @@ body {
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
+@mixin page-container {
+	padding: 26px 0 23px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
 .wrapper {
 	max-width: 965px;
 	margin: 0 auto;
@@ -396,9 +401,8 @@ header {
 }
 /*--------------------------*/
 /*--------------------------*/
-.about-eurocare {
-	padding: 26px 0 23px;
-	background-color: #4183d7;
+.page-container {
+	@include page-container;
 
 	.eurocare-content {
 		margin: 0 auto;
@@ -710,7 +714,8 @@ footer {
 		background-color: #f9690e;
 	}
 }
-.contact-content {
+.page-container {
+	@include page-container;
 	.contact-list {
 		width: 100%;
 		margin: 0 auto;
@@ -732,9 +737,9 @@ footer {
 	}
 }
 /*--------------------------*/
-.rates-content {
-	box-sizing: border-box;
-	overflow: hidden;
+.page-container {
+	@include page-container;
+	background-color: #4183d7;
 	.rates-list {
 		width: 100%;
 		margin: 0 auto;
@@ -766,8 +771,8 @@ footer {
 }
 /*--------------------------*/
 /*--------------------------*/
-.about-content {
-	padding: 26px 0 28px;
+.page-container {
+	@include page-container;
 	background: #fff;
 	.about-description {
 		box-sizing: border-box;
@@ -781,11 +786,9 @@ footer {
 }
 /*--------------------------*/
 /*--------------------------*/
-.faq-content {
-	padding: 26px 0 28px;
+.page-container {
+	@include page-container;
 	background: #fff;
-	box-sizing: border-box;
-	overflow: hidden;
 	.faq-description {
 		font-size: 18px;
 		font-weight: 400;
@@ -833,10 +836,9 @@ footer {
 }
 /*--------------------------*/
 /*--------------------------*/
-.services-content {
+.page-container {
+	@include page-container;
 	padding-bottom: 27px;
-	box-sizing: border-box;
-	overflow: hidden;
 	.services-list {
 		width: 100%;
 		margin: 27px auto 0;
